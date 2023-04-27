@@ -53,28 +53,28 @@
             <button type="button" data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item active" data-bs-interval="4000">
                 <img src="https://picsum.photos/id/1/1200/300" class="w-100 d-block" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Title</h3>
                     <p>Description</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-item" data-bs-interval="4000">
                 <img src="https://picsum.photos/id/22/1200/300" class="w-100 d-block" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Title</h3>
                     <p>Description</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-item" data-bs-interval="4000">
                 <img src="https://picsum.photos/id/260/1200/300" class="w-100 d-block" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Title</h3>
                     <p>Description</p>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-item" data-bs-interval="4000">
                 <img src="https://picsum.photos/id/77/1200/300" class="w-100 d-block" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Title</h3>
@@ -98,6 +98,25 @@
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var myCarousel = document.getElementById('carouselId')
+    let numberR = Math.floor(Math.random() * 256);
+    let numberG = Math.floor(Math.random() * 256);
+    let numberB = Math.floor(Math.random() * 256);
+    let color = `rgb(${numberR}, ${numberG}, ${numberB})`;
+    console.log(color);
+
+    myCarousel.addEventListener('slide.bs.carousel', function () {
+        console.log('Zmena');
+        numberR = Math.floor(Math.random() * 256);
+        numberG = Math.floor(Math.random() * 256);
+        numberB = Math.floor(Math.random() * 256);
+        color = `rgb(${numberR}, ${numberG}, ${numberB})`;
+        console.log(color);
+        document.querySelector('body').style.backgroundColor = color;
+        document.querySelector('h1').style.setProperty("color", color, "importaant");
+    })
+  </script>
 </body>
 
 </html>
