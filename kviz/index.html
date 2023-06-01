@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/css/lightbox.css" rel="stylesheet" />
+  <link href="../css/my.css" rel="stylesheet">  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="#">Action 1</a>
+                      <a class="dropdown-item" href="#">Action 2</a>
+                  </div>
+              </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+              <input class="form-control me-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>  
+  <header class="bg-info p-5">
+    <!-- place navbar here -->
+    <h1 class="text-center text-white">Kvíz z historie filmu</h1>
+  </header>  
+  <main class="container">
+    <form method="post" class="mt-3">
+        <!-- Otázka 1 -->
+        <p class="alert alert-warning">1. Jak se jmenuje populární film, který natočil režisér Hřebejk v roce 1999?</p>
+        <div class="row mb-3">
+          <label for="otazka1" class="col-sm-3 col-form-label">Název filmu</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="otazka1" name="otazka1" placeholder="Zadej návev filmu">
+          </div>
+        </div>
+        <p class="collapse alert alert-success">Správná odpověď: <b>Pelíšky</b></p>
+        <!-- Otázka 2 -->
+        <p class="alert alert-warning">2. Kdy byl uveden první film?</p>
+        <div class="row mb-3">
+          <label for="otazka2" class="col-sm-3 col-form-label">Rok uvedení</label>
+          <div class="col-sm-9">
+            <input type="number" class="form-control" id="otazka2" name="otazka2" value="1900" max="1920" min="1880">
+          </div>
+        </div>
+        <p class="collapse alert alert-success">Možné odpovědi: <b>1888</b> nebo <b>1895</b></p>
+        <!-- Otázka 3 -->
+        <p class="alert alert-warning">3. Jaký název má poslední bondovka?</p>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-3 pt-0">Vyber správný název</legend>
+          <div class="col-sm-9">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="otazka3" id="spectre" value="Spectre">
+              <label class="form-check-label" for="spectre">
+                Spectre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="otazka3" id="skyfall" value="Skyfall">
+              <label class="form-check-label" for="skyfall">
+                Skyfall
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="otazka3" id="no-time-to-die" value="No Time to Die">
+              <label class="form-check-label" for="not-time-to-die">
+                No Time to Die
+              </label>
+            </div>
+          </div>
+          <p class="collapse alert alert-success">Správná odpověď: <b>Not Time to Die</b></p>
+          <!-- Otázka 4 -->
+        <p class="alert alert-warning">4. Hraje posledního Bonda Pierce Brosnan?</p>
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-9 offset-sm-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="otazka4" name="otazka4" checked>
+              <label class="form-check-label" for="otazka4">
+                Ano, je to pravda
+              </label>
+            </div>
+          </div>
+        </div>
+        <p class="collapse alert alert-success">Správná odpověď: <b>Není to pravda, hraje ho Daniel Craig</b></p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".collapse">Ukázat odpovědi</button>
+      </form>
+  </main>
+  <footer>
+    <!-- place footer here -->
+    <p>&copy; 2023 - Tobiáš Hopp, IT1</p>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
