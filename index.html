@@ -1,103 +1,128 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rubikovy kosty</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Testovací web o rubikových kostkách za pomocí bootstrapu.">
+    <meta name="keywords" content="Rubikova kostka, Rubik, 3x3x3, Speedcubing">
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/my.css" rel="stylesheet">
-
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger sticky-top">
+        <a class="navbar-brand" href="#"><img src="img/cube-logo-active.png" alt="Site Logo" width="80" height="40"></a>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    <a class="nav-link" href="prehled/index.html">Prehled kostek</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
+                    <a class="nav-link" href="kviz/index.html">Kvíz</a>
                 </li>
             </ul>
-            <form class="d-flex my-2 my-lg-0">
-                <input class="form-control me-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div> 
+        </div>
     </nav>
-  <header class="bg-info p-5">
-    <!-- place navbar here -->
-    <h1 class="text-center text-light">FilmWeb</h1>
-  </header>
-  <main>    
-    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <header class="bg-warning p-5">
+        <!-- place navbar here -->
+        <h1 class="text-center text-white">Rubikovy kostky</h1>
+    </header>
+    <main>
+        <div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" role="listbox" style=" width:100%; height: 500px !important;">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/rubikcubebanner.jpg" class="w-100 d-block" alt="First slide">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/banner1smaller.jpg" class="w-100 d-block" alt="Second slide">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/banner2smaller.jpg" class="w-100 d-block" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://picsum.photos/id/1/1200/300" class="w-100 d-block" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-md-7 m-1">
+                    <h2>Co to vlastně je?</h2>
+                    <p>Rubikova kostka je hlavolam, tvořený několaka menšími krychličkami s různými barvami na stranách.
+                        Cílem je pomocí otáčení stran kostky dostat všechny menší kostičky na správné místo, tak aby
+                        celá kostka měla na každé straně pouze jednu z šesti barev. Na první pohled se to sice může zdát
+                        jednoduché, ale když si kostku poprvé vyzkoušíte, zjistíte že to zas tak jednoduché není. Je zde
+                        totiž přes 43 triliónů kombinací. Díky své genialitě se kostka ujala a dnes je nejprodávánější
+                        hračkou v historii, s tím že firma Rubiks prodala více než 450 miliónů kusků.</p>
                 </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="10000">
-                <img src="https://picsum.photos/id/22/1200/300" class="w-100 d-block" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="10000">
-                <img src="https://picsum.photos/id/260/1200/300" class="w-100 d-block" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="10000">
-                <img src="https://picsum.photos/id/77/1200/300" class="w-100 d-block" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Title</h3>
-                    <p>Description</p>
+                <div class="col-md-4 text-center">
+                    <figure class="figure">
+                        <img src="img/rubikscube.jpg" class="figure-img img-fluid rounded" alt="Rubikova kostka">
+                        <figcaption class="figure-caption">Rubikova kostka</figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-  </main>
-  <footer>
-    <!-- place footer here -->
-    <p>&copy; 2023 - Tobiáš Hopp, IT1</p>
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-md-4 text-center">
+                <figure class="figure">
+                    <img src="img/ernorubik.jpg" class="figure-img img-fluid rounded" alt="Ernő Rubik">
+                    <figcaption class="figure-caption">Ernő Rubik</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-7 m-1">
+                <h2>Historie</h2>
+                <p>Hlavolam je pojmenovaný po jeho vynálezci maďarském sochaři a učiteli architektury Ernő Rubikovi,
+                    který jej vymislel 19. května 1974. Rubik kostku sestrojil jen jako výzvvu pro sebe, aby zjistil
+                    jestli dokáže sestrojit mechanismus, který všem dílkům umožňuje pohybovat se nezávisle na sobě. Že
+                    je kostka dobrý hlavolam zjistil až když ji poprvé zamíchal. O půl roku později si ji dal patentovat
+                    a v roce 1977 se začala v Budapešti prodávat první testovací várka. Kostka se uchytila a v
+                    osmdesátých letech se rozšířila do celého světa.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-md-7 m-1">
+                <h2>Speedcubing</h2>
+                <p>Když se mechanismus kostky postupem času zlepšoval, začal se vyvíjet speedcubing, neboli skládání
+                    rubikovy kostky na čas. Díky přidání magnetů, aby kostka lépe držela svůt tvar a zaoblení vnitřních
+                    stran téměř zmizela mehcanická limitace kostky a jediné co lidi odděluje jsou jejich zkušenosti. Za
+                    účelem uchováváním rekordů byla založena organizace World Cube Association. Organizace pořádá
+                    soutěže v mnoha zemích světa zahrnujících i Česko. A aby byl nějaký čas brán jako světový rekord,
+                    musí být proveden právě v jedné z těchto soutěží. V dnešní době drží oficiální rekord ve složení
+                    3x3x3 rubikovy kostky Američan Max Park, který se svým časem 3,13 vteřin překonal 11. června 2023
+                    minulý rekord 3,47, který se podařil Číňanovi Yusheng Du téměř pět let zpátky.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <figure class="figure">
+                    <img src="img/maxpark.jpg" class="figure-img img-fluid rounded" alt="Max Park">
+                    <figcaption class="figure-caption">Max Park</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+        <hr>
+        <p style="text-align: center;">&copy; 2023 - Tobiáš Hopp, IT1</p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
