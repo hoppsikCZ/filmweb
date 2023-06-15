@@ -1,6 +1,6 @@
 # FilmWeb
 ## Ukázkový web využívající Bootstrap
-* Autor: Marek Lučný
+* Autor: Tobiáš Hopp
 * Třída: IT1
 * SŠPU Opava
 
